@@ -73,35 +73,19 @@ const useStyles = makeStyles((theme) => ({
 
 const tiers = [
   {
-    title: 'Free',
-    price: '0',
-    description: ['10 users included', '2 GB of storage', 'Help center access', 'Email support'],
-    buttonText: 'Sign up for free',
-    buttonVariant: 'contained',
+    title: 'BASIC',
+    price: '9',
+    description: ['Very good', 'Amazing', 'Perfect job', 'Love this', 'It’s so good', 'Features']
   },
   {
-    title: 'Pro',
-    price: '15',
-    description: [
-      '20 users included',
-      '10 GB of storage',
-      'Help center access',
-      'Priority email support',
-    ],
-    buttonText: 'Get started',
-    buttonVariant: 'contained',
+    title: 'ADVANCED',
+    price: '99',
+    description: ['Very good', 'Amazing', 'Perfect job', 'Love this', 'It’s so good', 'Features']
   },
   {
-    title: 'Enterprise',
-    price: '30',
-    description: [
-      '50 users included',
-      '30 GB of storage',
-      'Help center access',
-      'Phone & email support',
-    ],
-    buttonText: 'Contact us',
-    buttonVariant: 'contained',
+    title: 'PRO',
+    price: '120',
+    description: ['Very good', 'Amazing', 'Perfect job', 'Love this', 'It’s so good', 'Features']
   },
 ];
 
@@ -121,7 +105,7 @@ export default function Pricing() {
         </Typography>
       </Container>
       {/* End hero unit */}
-      <Container maxWidth="md" component="main">
+      <Container maxWidth="md">
         <Grid container spacing={5} alignItems="flex-end">
           {tiers.map((tier) => (
             // Enterprise card is full width at sm breakpoint
