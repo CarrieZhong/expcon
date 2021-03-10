@@ -44,7 +44,7 @@ export default class Header extends React.Component {
             <span style={{...centerStyle, ...bigText}}>INTERACTIVE CONCERT EXPERIENCE</span>
             <span style={{...centerStyle, ...text}}>Experience your favourite artists like never before and from the comfort of your own home.</span>
             <div style={centerStyle}>
-              <GradientButton onClick={() => alert("hello")}>TRY IT NOW</GradientButton>
+              <GradientButton onClick={(e) => {e.preventDefault(); window.location.href='/pricing';}}>TRY IT NOW</GradientButton>
             </div>
           </h2>
         </div>
@@ -54,7 +54,7 @@ export default class Header extends React.Component {
             <span style={{...centerStyle, ...bigText}}>INTERACTIVE CONCERT EXPERIENCE</span>
             <span style={{...centerStyle, ...text}}>Experience your favourite artists like never before and from the comfort of your own home.</span>
             <div style={centerStyle}>
-              <GradientButton onClick={() => alert("hello")}>TRY IT NOW</GradientButton>
+              <GradientButton onClick={(e) => {e.preventDefault(); window.location.href='/pricing';}}>TRY IT NOW</GradientButton>
             </div>
           </h2>
         </div><div style={{position: "relative", flex: 1}} >
@@ -63,7 +63,7 @@ export default class Header extends React.Component {
             <span style={{...centerStyle, ...bigText}}>INTERACTIVE CONCERT EXPERIENCE</span>
             <span style={{...centerStyle, ...text}}>Experience your favourite artists like never before and from the comfort of your own home.</span>
             <div style={centerStyle}>
-              <GradientButton onClick={() => alert("hello")}>TRY IT NOW</GradientButton>
+              <GradientButton onClick={(e) => {e.preventDefault(); window.location.href='/pricing';}}>TRY IT NOW</GradientButton>
             </div>
           </h2>
         </div>
